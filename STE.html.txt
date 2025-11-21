@@ -1,0 +1,237 @@
+<!--
+  Sagor Telecom & Exchange - GitHub-ready single-file website
+  File: index.html
+  Instructions:
+  1. Replace assets/logo.png with your logo (same folder) or change <img> src to your logo URL.
+  2. Edit company details (address, phone, email) inside the CONTACT section.
+  3. To deploy on GitHub Pages:
+     - Create a new repo (e.g. sagor-telecom-website)
+     - Add this file as index.html at the repo root
+     - Commit & push, then enable GitHub Pages from branch main (Settings > Pages) or visit https://<username>.github.io/<repo>
+  4. For offline editing, open index.html in a browser.
+-->
+
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Sagor Telecom & Exchange</title>
+  <meta name="description" content="Sagor Telecom & Exchange - Internet, VOIP, Exchange & Support">
+  <style>
+    :root{--accent:#0b6cf0;--dark:#0b2540;--muted:#6b7280}
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;line-height:1.5;margin:0;color:#0b2540}
+    a{color:var(--accent);text-decoration:none}
+    header{background:linear-gradient(90deg,#f8fbff, #ffffff);border-bottom:1px solid #e6eefc}
+    .container{max-width:1100px;margin:0 auto;padding:20px}
+    .nav{display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand img{width:56px;height:56px;object-fit:contain;border-radius:8px}
+    nav ul{display:flex;gap:16px;list-style:none;margin:0;padding:0}
+    .btn{display:inline-block;padding:10px 14px;border-radius:8px;background:var(--accent);color:#fff;font-weight:600}
+
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:30px;align-items:center;padding:42px 0}
+    .hero h1{font-size:28px;margin:0 0 10px}
+    .hero p{color:var(--muted);margin:0 0 18px}
+    .features{display:flex;gap:12px;flex-wrap:wrap}
+    .card{background:#fff;border:1px solid #eef6ff;padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(11,38,64,0.03)}
+    .plans{display:flex;gap:12px;flex-wrap:wrap}
+    .plan{flex:1;min-width:200px;padding:18px;border-radius:10px;border:1px solid #e6eefc}
+
+    section{padding:36px 0}
+    h2{margin:0 0 14px}
+    .grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+
+    footer{background:#071533;color:#fff;padding:20px}
+    .contact-list{display:flex;flex-direction:column;gap:8px}
+
+    /* responsive */
+    @media(max-width:880px){.hero{grid-template-columns:1fr;}.brand img{width:46px;height:46px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <img src="assets/logo.png" alt="Sagor Telecom Logo" id="logo">
+        <div>
+          <strong>Sagor Telecom & Exchange</strong>
+          <div style="font-size:12px;color:var(--muted)">Internet • VOIP • Support</div>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#services">সার্ভিস</a></li>
+          <li><a href="#plans">প্ল্যান</a></li>
+          <li><a href="#about">বিস্তারিত</a></li>
+          <li><a href="#contact">যোগাযোগ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <h1>আপনার যোগাযোগের সবকিছু — দ্রুত, ভরসাযোগ্য ও সাশ্রয়ী</h1>
+        <p>Fiber Internet, VOIP Exchange এবং ২৪/৭ সাপোর্ট — Sagor Telecom আপনাকে দেয় বিশ্বস্ত কানেকশন ও পারফরম্যান্স।</p>
+        <div class="features">
+          <div class="card">
+            <strong>Fiber Internet</strong>
+            <div style="font-size:13px;color:var(--muted)">উচ্চ গতির ফুল ডুয়াল ব্যান্ড কানেকশন</div>
+          </div>
+          <div class="card">
+            <strong>VOIP Exchange</strong>
+            <div style="font-size:13px;color:var(--muted)">ব্যবসায়িক কলে সাশ্রয়ী রেট</div>
+          </div>
+          <div class="card">
+            <strong>২৪/৭ সাপোর্ট</strong>
+            <div style="font-size:13px;color:var(--muted)">দ্রুত রেসপন্স ও অন-সাইট সেবা</div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="card">
+        <h3>অফার ক্লিক করুন</h3>
+        <div style="margin:12px 0">শুরু করুন — প্রথম মাসে ২০% ডিসকাউন্ট</div>
+        <a class="btn" href="#contact">সাইন আপ করুন</a>
+        <hr style="margin:12px 0;border:none;border-top:1px solid #eef6ff">
+        <div style="font-size:13px;color:var(--muted)">দ্রুত যোগাযোগ:</div>
+        <div style="margin-top:8px"><strong>Phone:</strong> <a href="tel:+880123456789">+880 1234-56789</a></div>
+        <div><strong>Email:</strong> <a href="mailto:info@sagortelecom.com">info@sagortelecom.com</a></div>
+      </aside>
+    </section>
+
+    <section id="services">
+      <h2>আমাদের সার্ভিসসমূহ</h2>
+      <div class="grid3">
+        <div class="card">
+          <h3>Residential Internet</h3>
+          <p style="color:var(--muted)">ঘরে দ্রুত ও নির্ভরযোগ্য ব্রডব্যান্ড সার্ভিস।</p>
+        </div>
+        <div class="card">
+          <h3>Business Internet</h3>
+          <p style="color:var(--muted)">আপনার ব্যবসার জন্য এসএলএ-সহ উচ্চ আপটাইম।</p>
+        </div>
+        <div class="card">
+          <h3>VOIP & PBX</h3>
+          <p style="color:var(--muted)">ক্যাস্টমাইজড এক্সচেঞ্জ ও কল রাউটিং।</p>
+        </div>
+        <div class="card">
+          <h3>Network Setup</h3>
+          <p style="color:var(--muted)">LAN/WAN সেটআপ, রাউটার কনফিগারেশন।</p>
+        </div>
+        <div class="card">
+          <h3>Maintenance</h3>
+          <p style="color:var(--muted)">নিয়মিত মনিটরিং ও ফিল্ড সার্ভিস।</p>
+        </div>
+        <div class="card">
+          <h3>Custom Solutions</h3>
+          <p style="color:var(--muted)">আপনার চাহিদা অনুযায়ী কাস্টম প্যাকেজ।</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="plans">
+      <h2>প্ল্যানসমূহ</h2>
+      <div class="plans">
+        <div class="plan card">
+          <h3>Basic</h3>
+          <div style="font-weight:700;font-size:18px">৳499/মাস</div>
+          <ul style="color:var(--muted)">
+            <li>25 Mbps</li>
+            <li>Unlimited Data</li>
+            <li>Basic Support</li>
+          </ul>
+          <a class="btn" href="#contact">টাকা জমা দিন</a>
+        </div>
+        <div class="plan card">
+          <h3>Standard</h3>
+          <div style="font-weight:700;font-size:18px">৳999/মাস</div>
+          <ul style="color:var(--muted)">
+            <li>100 Mbps</li>
+            <li>Unlimited Data</li>
+            <li>Priority Support</li>
+          </ul>
+          <a class="btn" href="#contact">সাইন আপ করুন</a>
+        </div>
+        <div class="plan card">
+          <h3>Business</h3>
+          <div style="font-weight:700;font-size:18px">Custom</div>
+          <ul style="color:var(--muted)">
+            <li>Dedicated Fiber</li>
+            <li>SLAs & 24/7 Support</li>
+            <li>VOIP Integration</li>
+          </ul>
+          <a class="btn" href="#contact">যোগাযোগ করুন</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>আমাদের সম্পর্কে</h2>
+      <p style="color:var(--muted)">Sagor Telecom & Exchange দীর্ঘ সময় ধরে গ্রাহকদের নির্ভরযোগ্য ইন্টারনেট ও টেলিকম সেবায় নিয়োজিত। আমাদের লক্ষ্য — সাশ্রয়ী দাম ও দ্রুত সার্ভিস দিয়ে আপনার যোগাযোগ সহজ করা।</p>
+    </section>
+
+    <section id="contact">
+      <h2>যোগাযোগ করুন</h2>
+      <div style="display:grid;grid-template-columns:1fr 320px;gap:16px">
+        <form class="card" onsubmit="handleForm(event)">
+          <label>নাম<input id="name" required placeholder="আপনার নাম" style="width:100%;padding:8px;margin-top:8px;border-radius:6px;border:1px solid #e6eefc"></label>
+          <label style="margin-top:8px">ফোন<input id="phone" required placeholder="01XXXXXXXXX" style="width:100%;padding:8px;margin-top:8px;border-radius:6px;border:1px solid #e6eefc"></label>
+          <label style="margin-top:8px">মেসেজ<textarea id="message" rows="4" placeholder="আপনার বার্তা" style="width:100%;padding:8px;margin-top:8px;border-radius:6px;border:1px solid #e6eefc"></textarea></label>
+          <div style="margin-top:12px"><button class="btn" type="submit">পাঠান</button></div>
+          <div id="formStatus" style="margin-top:10px;color:var(--muted);font-size:13px"></div>
+        </form>
+
+        <aside class="card">
+          <h3>অফিস</h3>
+          <div class="contact-list">
+            <div><strong>ঠিকানা:</strong> </div>
+            <div><strong>ফোন:</strong> কালীবাড়ি রোড, ভাটই বাজার, ঝিনাইদহ <a href="tel:+৮৮০১৭৮৫৩৪০০৪১">+৮৮০১৯৭২৭১৪২৭৭</a></div>
+            <div><strong>ইমেইল:</strong> <a href="mailto:info@sagortelecom.com">info@sagortelecom.com</a></div>
+            <div><strong>সামাজিক:</strong> <a href="#">https://www.facebook.com/sagorparvez.mollah</a> • <a href="#">YouTube</a></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center">
+      <div>© <span id="year"></span> Sagor Telecom & Exchange — All rights reserved.</div>
+      <div style="font-size:13px;color:rgba(255,255,255,0.8)">Made with ♥ for customers</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function handleForm(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const message = document.getElementById('message').value.trim();
+      const status = document.getElementById('formStatus');
+      // Basic fallback: open mail client
+      const mailto = `mailto:info@sagortelecom.com?subject=${encodeURIComponent('Contact from '+name)}&body=${encodeURIComponent('Phone: '+phone+'\n\n'+message)}`;
+      status.textContent = 'আপনার ডিফল্ট ইমেইল অ্যাপে তথ্য খুলছে...';
+      window.location.href = mailto;
+    }
+
+    // Small helper: swap logo if user drags a file onto logo (local preview only)
+    const logo = document.getElementById('logo');
+    logo.addEventListener('dragover', e=>e.preventDefault());
+    logo.addEventListener('drop', e=>{
+      e.preventDefault();
+      const f = e.dataTransfer.files[0];
+      if(!f) return;
+      const reader = new FileReader();
+      reader.onload = ev => logo.src = ev.target.result;
+      reader.readAsDataURL(f);
+      alert('লোকাললি লোগো প্রিভিউ করা হচ্ছে — ডাটাটি ডাটাবেসে আপলোড হবে না।');
+    });
+  </script>
+</body>
+</html>
